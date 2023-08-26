@@ -88,7 +88,8 @@ class Calc_GUI():
         Button(self.root, command=lambda:self.Input('='),
             highlightbackground='darkgoldenrod1', text='=', width=6,
             height=3).place(x=180, y=300)
-        
-calc = Calc_GUI()
-calc.Calc_Buttons()
-calc.root.mainloop()
+
+if __name__ == "__main__":
+    calc = Calc_GUI()
+    calc.Calc_Buttons()
+    calc.root.mainloop()
